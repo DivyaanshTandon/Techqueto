@@ -1,0 +1,35 @@
+/resources
+    /views
+        index.blade.php
+    /css
+        styles.css
+    /js
+        script.js
+
+        <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel and Food App</title>
+    <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Hotel and Food Listing</h1>
+        <nav>
+            <a href="#" id="hotel-list">Hotel Listing</a>
+            <a href="#" id="food-list">Food Listing</a>
+            <a href="#" id="dashboard">Dashboard</a>
+        </nav>
+    </header>
+    <main id="main-content">
+        <h2>Welcome to the Hotel and Food App</h2>
+        <p>Select an option from the menu to get started.</p>
+    </main>
+    <footer>
+        <p>&copy; 2023 Hotel and Food App</p>
+    </footer>
+    <script src="{{ asset('js/script.js') }}"></script>
+</body>
+</html>
